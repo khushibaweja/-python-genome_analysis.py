@@ -1,36 +1,52 @@
-# 🧬 Genome Analysis and Annotation Tool
+# 🧬 Genome Analysis and Annotation Tool  
 
-This repository contains a **Python-based tool** for fetching, analyzing, annotating, and visualizing genomic sequences using **Biopython** and **Matplotlib**.  
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)  
+![Biopython](https://img.shields.io/badge/Biopython-1.81%2B-green)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7%2B-orange)  
+![NumPy](https://img.shields.io/badge/NumPy-1.24%2B-lightblue)  
+![License](https://img.shields.io/badge/License-MIT-yellow)  
 
-The script allows users to:  
-- Fetch sequences from **NCBI** using accession numbers  
-- Perform sequence operations (transcription, translation, reverse transcription)  
-- Analyze **GC content** and sequence statistics  
-- Align sequences using **PairwiseAligner**  
-- Annotate genomes with features  
-- Visualize outputs with plots and summaries  
+A **Python-based bioinformatics tool** for fetching, analyzing, annotating, and visualizing genomic sequences using **Biopython**, **Matplotlib**, and **NumPy**.  
+
+This tool is designed for students, researchers, and bioinformatics enthusiasts who want to:  
+- Retrieve annotated sequences directly from **NCBI**  
+- Perform **molecular operations** like transcription, translation, and reverse transcription  
+- Analyze **GC content, sequence length, and features**  
+- Run **pairwise sequence alignments**  
+- Annotate and export genomes in **GenBank format**  
+- Generate **biological data visualizations**  
 
 ---
 
-## ✨ Features
+## ✨ Features  
 
-- 📥 **Fetch Genomic Sequences** directly from NCBI (GenBank format with annotations).  
-- 📊 **Sequence Analysis**: Calculate sequence length and GC content.  
+- 📥 **Fetch Sequences**: Retrieve annotated genomic sequences from NCBI (GenBank format).  
+- 📊 **Sequence Analysis**: Compute sequence length and GC content.  
 - 🔬 **Molecular Operations**: Transcription, translation, and reverse transcription.  
-- 🔗 **Sequence Alignment**: Global pairwise alignment with Biopython’s `PairwiseAligner`.  
+- 🔗 **Sequence Alignment**: Global pairwise alignment using Biopython’s `PairwiseAligner`.  
 - 🧬 **Genome Annotation**: Add example features (gene, exon, CDS) if none exist.  
-- 📂 **Save Annotated Genome** as a GenBank file.  
+- 📂 **Save Output**: Write annotated genome to a GenBank file.  
 - 📈 **Visualization**:  
   - Sequence length (bar chart)  
   - GC content (pie chart)  
   - Genome browser–style feature plots  
-- 📜 **Text-based Outputs** for lightweight summaries.  
+- 📜 **Text Summaries**: Lightweight console-based visualization of sequence statistics.  
 
 ---
 
-## 🛠 Requirements
+## 🛠 Tech Stack  
 
-Install dependencies before running:
+- **Python 3.8+**  
+- [Biopython](https://biopython.org/) (`Bio.Entrez`, `SeqIO`, `SeqFeature`, `PairwiseAligner`)  
+- [Matplotlib](https://matplotlib.org/) (for plotting)  
+- [NumPy](https://numpy.org/) (for numerical operations)  
+
+---
+
+## 📦 Installation  
+
+Clone this repository and install the required dependencies:  
 
 ```bash
-pip install biopython matplotlib numpy
+git clone https://github.com/khushibaweja/genome-analysis-tool.git
+cd genome-analysis-tool
